@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+    function getData(){
+        //'https://yts.mx/api/v2/list_movies.json'
+        //AJAX기법을 위한 ajax함수
+        //XMLHttpRequest , $.get , $.ajax
+        $.ajax({
+                url : 'https://yts.mx/api/v2/list_movies.json',
+                method : "GET",
+                dataType : "JSON"
+        }).done(function(response){
+            console.log(response)
+            console.log(response.data.movies)
+            const movieList = response.data.movies
+        })
+    }
+    </script>
+
+</head>
+<body>
+    <button onclick="getData()">요청</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+
+#movie{
+    width:90%;
+    height:250px;
+    background-color: darkgoldenrod;
+    border-radius: 5px;
+    margin:0 auto;
+    margin-bottom:10px;
+}
+
+#movie-left{
+    float:left;
+    width:20%;
+    height: 100%;
+    background-color: darkgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#movie-right{
+    float:left;
+    width:80%;
+    height:100%;
+    background-color: darkorange;
+  }
